@@ -24,7 +24,7 @@ def main(argv):
     # argparse
     parser = argparse.ArgumentParser(description='Get Code Snippet by Tags')
     requiredNamed = parser.add_argument_group('Required Named Arguments')
-    requiredNamed.add_argument('--lang', '-l', type=str, metavar='<language>', choices=["cpp","python","java"], help='cpp, python, java etc.', required=True)
+    requiredNamed.add_argument('--lang', '-l', type=str, metavar='<language>', choices=["cpp","python","java", "vhdl"], help='cpp, python, java, vhdl etc.', required=True)
     requiredNamed.add_argument('--tags', '-t', type=str, metavar='<space-separated string of tags>', help='the tags to search for', required=True)
 
     args = parser.parse_args()
